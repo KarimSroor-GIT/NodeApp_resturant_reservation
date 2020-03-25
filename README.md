@@ -31,15 +31,5 @@ This project uses https://www.npmjs.com/package/debug for development logging. T
 npm run debug
 ```
 
-## FAQ
-
-- Q: Why didn't you store the time submitted?
-  - A: I wanted to reduce the number of fields and simplify testing.
-- Q: Wouldn't it be easier if the form submitted a datetime string instead of building and parsing one?
-  - A: Yes, it would, but the form logic is simpler. Either way, someone has to do the work.
-- Q: Why did you mix a callback and a Promise in `lib/reservations.js`?
-  - A: `Joi` doesn't support Promises, but it does support callbacks. I wanted to show how to test both kinds of asynchronous code.
-- Q: How'd you handle cross-platform support?
-  - A: Avoided relative directories, used `cross-env` to transform environmental variables.
 
 
